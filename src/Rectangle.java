@@ -13,7 +13,7 @@ public class Rectangle {
         String wrongInput;
         Scanner in = new Scanner(System.in);
 
-
+        //input prompt
         System.out.println("Enter length ");
         //input if is number if not go to else
         if(in.hasNextInt())
@@ -63,10 +63,8 @@ public class Rectangle {
             //outputs
             System.out.println("The area is " + area);
             System.out.println("The perimeter is " + perimeter);
-            System.out.println("The diagonal is " + diagonal);
+            System.out.printf("The diagonal is %.2f\n",+ diagonal);
         }
-
-
 
     }
 }
