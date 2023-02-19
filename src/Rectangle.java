@@ -19,6 +19,7 @@ public class Rectangle {
         if(in.hasNextInt())
         {
             length = in.nextInt();
+            //clear buffer
             in.nextLine();
         }
         //for any incorrect input
@@ -35,6 +36,7 @@ public class Rectangle {
         if(in.hasNextInt())
         {
             width = in.nextInt();
+            //clear buffer
             in.nextLine();
         }
         //for any incorrect input
