@@ -58,7 +58,7 @@ public class Rectangle {
             //calculations
             area = length * width;
             perimeter = (length * 2) + (width * 2);
-            diagonal = Math.sqrt (length * length) + (width * width);
+            diagonal = Math.sqrt ((length * length) + (width * width));
 
             //outputs
             System.out.println("The area is " + area);
