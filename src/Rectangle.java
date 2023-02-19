@@ -19,12 +19,12 @@ public class Rectangle {
         if(in.hasNextInt())
         {
             length = in.nextInt();
+            in.nextLine();
         }
         //for any incorrect input
         else
         {
             wrongInput = in.nextLine();
-            in.nextLine();
             System.out.println("You said the Length was " + wrongInput);
             System.out.println("Run the program again and enter length in numbers");
             System.exit(0);//Terminates the program
@@ -35,12 +35,12 @@ public class Rectangle {
         if(in.hasNextInt())
         {
             width = in.nextInt();
+            in.nextLine();
         }
         //for any incorrect input
         else
         {
             wrongInput = in.nextLine();
-            in.nextLine();
             System.out.println("you said the width was " + wrongInput);
             System.out.println("Run the program again and enter width in numbers");
             System.exit(0);//Terminates the program
