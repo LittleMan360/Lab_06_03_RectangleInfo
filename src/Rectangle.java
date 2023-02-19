@@ -4,6 +4,7 @@ public class Rectangle {
     public static void main(String[] args)
     {
 
+        //variables
         int width = 0;
         int length = 0;
         int area;
