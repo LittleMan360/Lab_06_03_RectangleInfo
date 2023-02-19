@@ -6,9 +6,9 @@ public class Rectangle {
 
         int width = 0;
         int length = 0;
-        int area = 0;
-        int perimeter = 0;
-        double diagonal = 0;
+        int area;
+        int perimeter;
+        double diagonal;
         String wrongInput;
         Scanner in = new Scanner(System.in);
 
@@ -22,7 +22,6 @@ public class Rectangle {
         //for any incorrect input
         else
         {
-            //not a degree in numbers
             wrongInput = in.nextLine();
             in.nextLine();
             System.out.println("You said the Length was " + wrongInput);
@@ -39,7 +38,6 @@ public class Rectangle {
         //for any incorrect input
         else
         {
-            //not a degree in numbers
             wrongInput = in.nextLine();
             in.nextLine();
             System.out.println("you said the width was " + wrongInput);
@@ -48,22 +46,26 @@ public class Rectangle {
         }
 
         if(length == width)
+        //tells if it is a rectangle
         {
             System.out.println("A rectangle has different sized length and width. This is a square.");
-            System.out.println("Please enter the dimensions of a rectangle");
+            System.out.println("Rerun the program and please enter the dimensions of a rectangle");
             System.exit(0);//Terminates the program
         }
         else
         {
+            //calculations
             area = length * width;
             perimeter = (length * 2) + (width * 2);
             diagonal = Math.sqrt (length * length) + (width * width);
 
+            //outputs
+            System.out.println("The area is " + area);
+            System.out.println("The perimeter is " + perimeter);
+            System.out.println("The diagonal is " + diagonal);
         }
 
-        System.out.println("The area is " + area);
-        System.out.println("The perimeter is " + perimeter);
-        System.out.println("The diagonal is " + diagonal);
+
 
     }
 }
